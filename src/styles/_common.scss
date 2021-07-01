@@ -1,0 +1,45 @@
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+.container {
+  &-md {
+    @include containers(1140px);
+  }
+  &-lg {
+    @include containers(1084px);
+  }
+}
+
+.d-flex {
+  display: flex;
+}
+
+.justify {
+  &--space-between {
+    justify-content: space-between;
+  }
+}
+
+.align {
+  &-items {
+    &--center {
+      align-items: center;
+    }
+  }
+}
+
+.btn-link {
+  display: inline-block;
+  color: $grey;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 14px;
+  padding: 8px 20px;
+  border-radius: 3px;
+  transition: all $transtion-up;
+  &:hover {
+    background-color: $orange;
+    color: $white;
+  }
+}

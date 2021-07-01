@@ -1,0 +1,8 @@
+.section-wrap {
+  height: 100%;
+}
+
+.main-section {
+  height: calc(100% - #{$header-min-height});
+  background: linear-gradient(180deg, #709dca 90%, $white 10%);
+}
