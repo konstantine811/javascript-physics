@@ -4,6 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const HtmlWebpackPugPlugin = require('html-webpack-pug-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 const mode = process.env.NODE_ENV || 'development';
 const folderBuild = 'build';
@@ -52,6 +53,10 @@ module.exports = {
         use: ['ts-loader'],
       },
       {
+        test: /\.(eot|woff|woff2|svg|ttf)([\?]?.*)$/,
+        loader: 'file-loader',
+      },
+      {
         test: /\.(sa|sc|c)ss$/,
         use: [
           MiniCssExtractPlugin.loader,
@@ -97,6 +102,15 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: mode ? '[name].css' : '[name].[contenthash].css',
       chunkFilename: mode ? '[id].css' : '[id].[contenthash].css',
+    }),
+    new CopyWebpackPlugin({
+      patterns: [
+        {
+          from: path.resolve(__dirname, 'src/'),
+          to: 'images/',
+          context: 'app/',
+        },
+      ],
     }),
   ],
   output: {

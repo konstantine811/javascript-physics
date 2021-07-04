@@ -1,5 +1,13 @@
+$black: #394b50;
+$blue: #709dca;
 $grey: #868686;
+$grey-2: #a9a9a9;
+$grey-3: #7b7b7b;
+$grey-4: #aeb7ba;
+$grey-blue: #818b95;
+$grey-blue-2: #99a9ae;
 $orange: #ffbb42;
+$red-orange: #f6772c;
 $white: #ffffff;
 
 // transition
@@ -7,3 +15,24 @@ $transtion-up: 0.3s ease;
 
 // header
 $header-min-height: 93px;
+
+// txt
+$common-font-family: 'Lato', sans-serif;
+$font-size--h1-lg: 60px;
+$font-size--h1: 35px;
+$font-size--h2: 30px;
+$font-size--h4: 24px;
+$font-size--h4-lg: 25px;
+$font-size--h5: 20px;
+$font-size--h6: 16px;
+$font-size--txt-sm: 13px;
+$font-size--txt-xmd: 13.5px;
+$font-size--txt-md: 14px;
+$font-size--txt-lg: 15px;
+$font-size--txt-exlg: 18px;
+
+// button
+$btn--font-size: 14px;
+$btn--br: 2px;
+$btn--lg-p: 13px 42px;
+$btn--lg-h: 46px;

@@ -3,6 +3,9 @@ block vars
   -var title = 'Main page'
   -var description = 'This is main page'
 block content
+  //- mixins
+  include ../partials/mixins/form.mixin.pug
+  //- partials sections
   include ../partials/full-prelaoder.pug
   include ../partials/header.pug
   include ../partials/index-sections/main-section.pug
