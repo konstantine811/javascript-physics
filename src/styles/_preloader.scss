@@ -11,53 +11,10 @@
   justify-content: center;
   opacity: 1;
   animation: fade_in_out ease-in-out 2.8s backwards infinite;
-  &__logo {
-    width: 80px;
-    height: 80px;
-  }
-  .logo-circular-path-1 {
-    animation: loader_anim_2 ease-in-out 1.8s backwards infinite;
-  }
-  .logo-circular-path-2 {
-    animation: loader_anim_2 ease-in-out 1.7s backwards infinite;
-  }
-  .logo-circular-path-3 {
-    animation: loader_anim_2 ease-in-out 1.6s backwards infinite;
-  }
-}
-
-.logo-start-anim {
-  .logo-circular-path-1 {
-    animation: loader_anim_2 ease-in-out 1.8s reverse 1;
-  }
-  .logo-circular-path-2 {
-    animation: loader_anim_2 ease-in-out 1.7s reverse 1;
-  }
-  .logo-circular-path-3 {
-    animation: loader_anim_2 ease-in-out 1.6s reverse 1;
-  }
 }
 
 .fade-out {
   animation: fade_out ease-in-out 0.3s forwards 1;
-}
-
-@keyframes loader_anim_2 {
-  0% {
-    transform: rotate(0deg);
-    opacity: 1;
-  }
-  50% {
-    filter: contrast(5%) brightness(100%);
-    filter: contrast(0%) brightness(0%);
-    stroke-dasharray: 1, 300;
-    transform: rotate(360deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-    filter: contrast(5%) brightness(1000%);
-  }
 }
 
 @keyframes fade_in_out {
